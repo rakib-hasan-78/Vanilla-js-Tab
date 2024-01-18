@@ -1,0 +1,123 @@
+#tab{
+    width: $global-width;
+    height: 100vh;
+
+    .title-box{
+        width: 80%;
+        height: 120px;
+        display: $global-display-flex;
+        justify-content: $global-justify-content-space-around;
+        align-items: $global-align-items-center;
+        margin: $global-margin;
+        background-color: rgb(0,71,171);
+        background-image: linear-gradient(315deg, rgb(0,71,171) 0%, rgb(0,51,102) 74%);
+        border-radius: $global-border-radius;
+        box-shadow:0 4px 14px rgb(1, 29, 56);
+        -webkit-border-radius: $global-border-radius;
+        -moz-border-radius: $global-border-radius;
+        -ms-border-radius: $global-border-radius;
+        -o-border-radius: $global-border-radius;
+
+        &__heading{
+            font-size: $global-font-size-2-8;
+            font-weight: $global-font-weight-800;
+            background: linear-gradient(90deg, rgb(173, 216, 230), rgb(0, 191, 255), rgb(10, 186, 181));
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            padding: 2%;
+        }
+    }
+    .tab-container{
+        width: 750px;
+        margin: $global-margin;
+        margin-top: 20px;
+        padding:4rem;
+        border-radius: $global-border-radius;
+        -webkit-border-radius: $global-border-radius;
+        -moz-border-radius: $global-border-radius;
+        -ms-border-radius: $global-border-radius;
+        -o-border-radius: $global-border-radius;
+        box-shadow: 0 25px 45px rgba(0, 0,0,.1);
+        background: linear-gradient(315deg, rgba(255,255,255,.1) 0%, rgba(255, 255 , 255, 0.1) 74%);
+        border-right: 2px solid rgba(255,255,255,.2);
+        border-bottom: 2px solid rgba(255,255,255,.2);
+        backdrop-filter: blur(15px);
+        opacity: .85;
+        position: relative;
+
+    }
+    .line {
+        width: 90px;
+        background: linear-gradient(315deg, rgb(0, 71, 171) 0%, rgb(0, 51, 102) 74%);
+        position: absolute;
+        left: 12%;
+        height: 3.5px;
+        top: 127px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+}
+    .tab-btns{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        border-bottom: 3.5px solid #e4d7d7;
+        border-bottom-left-radius: 3.5px;
+        border-bottom-right-radius: 3.5px;
+
+        &__single-box{
+            padding: 8px;
+        }
+
+        &__single-btn{
+            padding:10px 16px;
+            cursor:pointer;
+            font-size:$global-font-size-1-2;
+            border: none;
+            outline: none;
+            font-weight: $global-font-weight-800;
+            text-transform: capitalize;
+            border-radius: .25rem;
+            -webkit-border-radius: .25rem;
+            -moz-border-radius: .25rem;
+            -ms-border-radius: .25rem;
+            -o-border-radius: .25rem;
+            background-color:#689ac1;
+            background: linear-gradient(90deg, rgb(173, 216, 230), rgb(0, 191, 255), rgb(10, 186, 181));
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        &__single-btn.active{
+            background-image: linear-gradient(315deg, rgb(0,71,171) 0%, rgb(0,51,102) 74%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+    }
+    .tab-contents{
+        padding: 2%;
+        &__content{
+            margin-left: 1rem;
+        }
+        &__title{
+            font-size: $global-font-size-1-5;
+            font-weight: $global-font-weight-700;
+            background: linear-gradient(90deg, rgb(173, 216, 230), rgb(0, 191, 255), rgb(10, 186, 181));
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        &__paragraph{
+            font-weight: $global-font-weight-400;
+            font-size: $global-font-size-1-2;
+            text-transform: capitalize;
+            color: rgb(229 216 216);
+        }
+    }
+
+}

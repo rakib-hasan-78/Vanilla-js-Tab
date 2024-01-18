@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: $global-height;
+}
+body{
+    font-family: $global-font-family !important;
+    font-weight: $global-font-weight-200 !important;
+    line-height: $global-line-height !important;
+    background-color: #182b3a;
+    background-image: linear-gradient(315deg, #182b3a 0%, #20a4f3 74%);
+}
+main{
+    width: 90%;
+    margin: $global-margin;
+}
+.container{
+    width: $global-width;
+    height: auto;
+    padding-top: 3%;
+}
+$list:(uppercase, lowercase, capitalize);
+
+@each $i in $list{
+    .text-#{$i}{
+        text-transform: $i;
+    }
+}
+
+
+// background-image: linear-gradient(315deg, #182b3a 0%, #20a4f3 74%);
