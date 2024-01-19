@@ -142,7 +142,11 @@ main {
   padding: 2%;
 }
 #tab .tab-contents__content {
+  display: none;
   margin-left: 1rem;
+}
+#tab .tab-contents__content.active {
+  display: grid;
 }
 #tab .tab-contents__title {
   font-size: 1.5rem;
